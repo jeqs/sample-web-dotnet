@@ -13,7 +13,7 @@ ready(function () {
         expYear: document.getElementById('expiry_year')
     };
 
-    btnSubmit.onclick = util.submit;
+    elements.btnSubmit.onclick = util.submit;
     util.addEventListener(window, 'message', util.listener);
 });
 
