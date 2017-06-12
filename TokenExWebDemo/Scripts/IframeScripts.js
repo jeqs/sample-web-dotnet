@@ -13,7 +13,9 @@ ready(function () {
         expYear: document.getElementById('expiry_year')
     };
 
-    elements.btnSubmit.onclick = util.submit;
+    if (elements.btnSubmit){
+        elements.btnSubmit.onclick = util.submit;
+    }
     util.addEventListener(window, 'message', util.listener);
 });
 
